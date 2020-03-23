@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from './Button';
 
 export default class Book extends Component {
   constructor(props){
@@ -12,36 +13,36 @@ export default class Book extends Component {
   }
 
     
-   addCount =()=>{
-     this.setState({count: this.state.count + 1 , });
+  //  addCount =()=>{
+  //    this.setState({count: this.state.count + 1 , });
     
 
-   }
-   lowerCount =()=>{
-      this.setState({count: this.state.count - 1  });
+  //  }
+  //  lowerCount =()=>{
+  //     this.setState({count: this.state.count - 1  });
 
-   }
-   resetCount =()=>{
-     this.setState({count: this.state.count=0 });
+  //  }
+  //  resetCount =()=>{
+  //    this.setState({count: this.state.count=0 });
 
-   }
+  //  }
    
 
     render() {
      // console.log(this.props);
 
      const {img,title,author}=this.props.info;
+
+    const {handleDelete}=this.props;
         return (
           <article className="book">
           <img src={img} width="150" alt="book"/>
             <div>
             <h4> Title : {title}</h4>
             <h5> author : {author}</h5>
-            <h3> count : {this.state.count}</h3>
-            <h3> name : {this.state.name}</h3>
-            <button type="button" onClick={this.addCount}> add count </button>
-            <button type="button" onClick={this.lowerCount}> LowerCount </button>
-            <button type="button" onClick={this.resetCount}>Reset count </button>
+            <Button handleDelete={handleDelete} />
+            
+            
             </div>
                 
 

@@ -15,28 +15,28 @@ const books=[
     id:3,
     img:'https://images-na.ssl-images-amazon.com/images/I/81waq3Kg2zL._AC_SX184_.jpg',
     title:'Good Book 3',
-    author:'Laxshana'
+    author:'Lakshana'
   }
   ,
    {
     id:4,
     img:'https://images-na.ssl-images-amazon.com/images/I/81OK+fLGUcL._AC_SX184_.jpg',
     title:'Good Book 3',
-    author:'Laxshana'
+    author:'Lakshana'
   }
   ,
    {
     id:5,
     img:'https://images-na.ssl-images-amazon.com/images/I/81waq3Kg2zL._AC_SX184_.jpg',
     title:'Good Book 3',
-    author:'Laxshana'
+    author:'Lakshana'
   }
   ,
    {
     id:6,
     img:'https://images-na.ssl-images-amazon.com/images/I/81waq3Kg2zL._AC_SX184_.jpg',
     title:'Good Book 3',
-    author:'Laxshana'
+    author:'Lakshana'
   }
 ];
 export default books;
